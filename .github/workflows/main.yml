@@ -6,12 +6,9 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: pwsh
-        shell: pwsh
-        run: |
-          Write-Output "Structure:"
-          Get-ChildItem -Recurse -File | Format-Table FullName
+      - uses: actions/checkout@v4
 
+    
       - name: setup msvc
         uses: ilammy/msvc-dev-cmd@v1
 
