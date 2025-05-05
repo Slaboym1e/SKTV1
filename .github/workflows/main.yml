@@ -7,7 +7,7 @@ jobs:
 
     steps:
       - name: pwd
-        run: pwd
+        run: cd .. && dir
 
       - name: setup msvc
         uses: ilammy/msvc-dev-cmd@v1
