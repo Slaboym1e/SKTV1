@@ -6,8 +6,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: pwd
-        run: dir
+      - name: pwsh
+        shell: pwsh
+        run: |
+          Write-Output "Structure:"
+          Get-ChildItem -Recurse -File | Format-Table FullName
 
       - name: setup msvc
         uses: ilammy/msvc-dev-cmd@v1
