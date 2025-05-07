@@ -1,5 +1,9 @@
 #include "GravityModel.h"
 
+GravityModel::GravityModel()
+{
+}
+
 GravityModel::GravityModel(double cellVolume)
    : _G(6.67430e-11), _cellVolume(cellVolume) {}
 
@@ -90,5 +94,10 @@ std::vector<double> GravityModel::solveInverseProblem(const std::vector<double>&
    }
 
    return rho;
+}
+
+void GravityModel::setCellVolume(const double& cellVolume)
+{
+   _cellVolume = cellVolume;
 }
 
