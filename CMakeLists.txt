@@ -10,7 +10,13 @@ add_executable(${PROJECT_NAME}
 	src/GravityModel.h
 	src/GravityModel.cpp
 	src/Render.h
-	src/Render.cpp)
+	src/Render.cpp
+	src/Grid.h
+	src/Grid.cpp
+	src/Cell.h
+	src/Cell.cpp
+	src/GProfile.h
+	src/GProfile.cpp)
 
 
 set(SFML_DIR "external/SFML-2.6.0/lib/cmake/SFML")
